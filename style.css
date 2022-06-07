@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 60px;
+  min-height: 100vh;
+}
+body .text {
+  align-items: flex-start;
+  justify-content: start;
+  /* height: auto; */
+  background: #fafafa;
+  border-radius: 9px;
+  margin: 0 auto;
+}
+
+.text h1 {
+  font-size: 44px;
+  font-weight: bold;
+  padding: 30px;
+}
+.text p {
+  width: 700px;
+  padding: 30px;
+}
+
+.wrapper {
+  width: 400px;
+  padding: 40px;
+  border: 2px solid black;
+  border-radius: 10%;
+  background: white;
+}
+.wrapper header {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+input,
+select,
+button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+input {
+  margin: 2px;
+  margin-bottom: 4px;
+  height: 50px;
+  font-size: 19px;
+  padding: 0 15px;
+  border: 1px solid #989;
+}
+input:focus {
+  padding: 0 14px;
+  border: 2px solid plum;
+}
+.drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box {
+  display: flex;
+  height: 45px;
+  width: 115px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+}
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  margin: 0 -5px 0 5px;
+}
+
+.select-box img {
+  max-width: 40px;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 30px;
+}
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+button {
+  height: 52px;
+  color: azure;
+  font-size: 17px;
+  cursor: pointer;
+  background: purple;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.toggle {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: -40%;
+  width: 120px;
+  height: 60px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.toggle i {
+  width: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.toggle .ball {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  margin: 7.5px;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
+}
+
+.zinput {
+  display: none;
+}
+
+/*
+	  -- Light Mode --
+  */
+
+.light {
+  background: #fafafa;
+}
+
+.light .toggle {
+  background: linear-gradient(145deg, #e1e1e1, #fff);
+  box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+  color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+  color: #151d2a;
+}
+
+.light .toggle .ball {
+  background: #151d2a;
+}
+
+/*
+	  -- Dark Mode --
+  */
+
+.dark {
+  background: #151d2a;
+}
+
+.dark .toggle {
+  background: #151d2a;
+  box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
+}
+
+.dark .toggle .bx-sun {
+  color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+  color: #151d2a;
+}
+
+.dark .toggle .ball {
+  background: #fafafa;
+  transform: translateX(60px);
+}
+.text h1 p {
+  color: white;
+}
